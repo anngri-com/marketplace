@@ -1,8 +1,33 @@
+/* body {
+  background-color: lightgray;
+} */
+/* .container {
+  background-color: white;
+} */
+/* #col2 {
+  display: none;
+} */
 .navbar {
   margin-top: 2px;
   color: black;
+  padding: 45px;
 }
 
 .navbar-brand {
   color: black;
+}
+
+.selector {
+  padding: 200px;
+  border-width: thin;
+  border-color: dark;
+  margin-bottom: 30px;
+}
+
+.selector2 {
+  padding: 100px;
+}
+
+#receipt{
+  display: none;
 }

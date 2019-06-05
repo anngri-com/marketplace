@@ -10,19 +10,72 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed">
-      <a class="navbar-brand" href="#">Marketplace</a>
+      <a class="navbar-brand text-uppercase" href="#">Marketplace</a>
     </nav>
-  <div class="container">
+  <div class="container bg-light">
   </div>
-  <!-- top row, has order information -->
+  <!-- ORDER top row, has order information, column one -->
   <div class="row">
-      <div class="col-sm-6" id="col1"></div>
-      <div class="col-sm-6" id="col2"></div>
-    </div>
-<!-- second row, user info form -->
-    <div class="row">
-      <div class="col-sm-6" id="col3"></div>
-      <div class="col-sm-6" id="col4"></div>
+      <div class="col-sm-6" id="col1">
+        <div class="selector border border-dark">
+          <h3>Order</h3>
+          <select class="form-control" id="order">
+            <option value="item1">Jewelry</option>
+            <option value="item2">Shoes</option>
+            <option value="item3">Dress</option>
+            <option value="item4">Watch</option>
+          </select>
+        </div>
       </div>
+
+<!-- RECEIPT column two -->
+
+      <div class="col-sm-6" id="col2">
+        <div class="selector2 border border-dark" id="receipt">
+          <h3>Receipt</h3>
+          <p>Name: <span class="name"></span> </p>
+          <p>Last name: <span class="lastname"></span> </p>
+          <p>Address: <span class="address"></span> </p>
+        </div>
+      </div>
+  </div>
+
+<!-- SHIPPING second row, user info form, column three -->
+
+    <div class="row">
+      <div class="col-sm-6" id="col3">
+        <div class="container border border-dark">
+          <h2>Shipping Information</h2>
+          <form action="/action_page.php" id="shipping">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <span class="name"></span>
+              <input type="name" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last name:</label>
+              <input type="lastname" class="form-control" id="lastname">
+            </div>
+            <div class="form-group form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+              </label>
+            </div>
+            <div class="form-group">
+              <label for="address">Address:</label>
+              <input type="address" class="form-control" id="address">
+            </div>
+            <button type="submit" id="submit" class="btn btn-dark">Submit Order</button>
+          </form>
+        </div>
+
+<!-- BUTTON -->
+
+
+
+  </div>
+</div>
+<!-- TEST -->
+
   </body>
 </html>
