@@ -5,8 +5,9 @@ $(document).ready(function() {
     var nameInput = $("input#name").val();
     var lastnameInput = $("input#lastname").val();
     var addressInput = $("input#address").val();
+    var orderInput = $("selecor#order").val();
 
-
+    $(".order").text(orderInput);
     $(".name").text(nameInput);
     $(".lastname").text(lastnameInput);
     $(".address").text(addressInput);
